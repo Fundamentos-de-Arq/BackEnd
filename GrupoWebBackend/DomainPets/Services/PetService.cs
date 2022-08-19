@@ -64,6 +64,7 @@ namespace GrupoWebBackend.DomainPets.Services
             existingPet.Race = pet.Race;
             existingPet.Type = pet.Type;
             existingPet.IsAdopted = pet.IsAdopted;
+            existingPet.IsPublished = pet.IsPublished;
 
             try
             {
