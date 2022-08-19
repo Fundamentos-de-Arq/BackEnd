@@ -855,7 +855,6 @@ D:\Documentos\2021-2\Backend-Aplicaciones web-Versiones\v15\GrupoWebBackend\Grup
 D:\Documentos\2021-2\Backend-Aplicaciones web-Versiones\v15\GrupoWebBackend\GrupoWebBackend\obj\Debug\net5.0\ref\GrupoWebBackend.dll
 D:\Documentos\2021-2\Backend-Aplicaciones web-Versiones\v15\GrupoWebBackend\GrupoWebBackend\obj\Debug\net5.0\GrupoWebBackend.pdb
 D:\Documentos\2021-2\Backend-Aplicaciones web-Versiones\v15\GrupoWebBackend\GrupoWebBackend\obj\Debug\net5.0\GrupoWebBackend.genruntimeconfig.cache
-C:\Users\ricar\Desktop\GrupoWebBackend\GrupoWebBackend\bin\Debug\net5.0\GrupoWebBackend.StaticWebAssets.xml
 C:\Users\ricar\Desktop\GrupoWebBackend\GrupoWebBackend\bin\Debug\net5.0\BCrypt.Net-Next.dll
 C:\Users\ricar\Desktop\GrupoWebBackend\GrupoWebBackend\bin\Debug\net5.0\BoDi.dll
 C:\Users\ricar\Desktop\GrupoWebBackend\GrupoWebBackend\bin\Debug\net5.0\BouncyCastle.Crypto.dll

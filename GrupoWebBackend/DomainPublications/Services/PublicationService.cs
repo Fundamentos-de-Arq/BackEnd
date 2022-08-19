@@ -51,6 +51,12 @@ namespace GrupoWebBackend.DomainPublications.Services
             }
         }
 
+        public async Task<Publication> FindByIdAsync(int id)
+        {
+            return await _publicationRepository.FindByIdAsync(id);
+            
+        }
+
         public async Task<PublicationResponse> UpdateAsync(int id, Publication publication)
         {
             var existingPublication = await _publicationRepository.FindByIdAsync(id);

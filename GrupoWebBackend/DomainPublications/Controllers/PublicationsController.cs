@@ -31,6 +31,9 @@ namespace GrupoWebBackend.DomainPublications.Controllers
             var resources = _mapper.Map<IEnumerable<Publication>, IEnumerable<PublicationResource>>(_publications);
             return resources;
         }
+        
+ 
+        
         [HttpPost]
         [SwaggerOperation(Summary="Post a publication",Tags= new [] {"Publications"})]
         public async Task<IActionResult> PostAsync([FromBody] SavePublicationResource resource)
@@ -49,6 +52,15 @@ namespace GrupoWebBackend.DomainPublications.Controllers
             var publicationResource = _mapper.Map<Publication, PublicationResource>(result.Resource);
             return Ok(publicationResource);
         }
+        
+        [HttpGet("{id:int}")]
+        public async Task<Publication> FindAsyncById (int id)
+        {
+            var publication = await _publicationService.FindByIdAsync(id);
+            
+            return publication;
+        }
+        
         [HttpPut ("{id:int}")]
         [SwaggerOperation(Summary="Update a publication",Tags= new [] {"Publications"})]
         public async Task<IActionResult> PutAsync (int id, [FromBody] SavePublicationResource resource)
