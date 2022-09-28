@@ -116,8 +116,17 @@ namespace GrupoWebBackend
 
             // For this course purpose we allow Swagger in release mode.
             app.UseDeveloperExceptionPage();
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "User Microservice v1"));
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "docs/swagger/{documentname}/swagger.json";
+            });
+
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/docs/swagger/v1/swagger.json", "Users Microservice v1 Documentation");
+                c.RoutePrefix = "docs/swagger";
+            });
 
             app.UseCors(builder => builder
                 .AllowAnyOrigin()
