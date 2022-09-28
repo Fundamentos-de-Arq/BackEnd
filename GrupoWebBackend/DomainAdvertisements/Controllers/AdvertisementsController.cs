@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿/*using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using GrupoWebBackend.DomainAdvertisements.Domain.Models;
@@ -82,4 +82,4 @@ namespace GrupoWebBackend.DomainAdvertisements.Controllers
             return Ok(advertisementResourceResource);
         }
     }
-}
+}*/

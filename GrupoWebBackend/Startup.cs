@@ -75,7 +75,7 @@ namespace GrupoWebBackend
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {Title = "TimExp Backend", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "User Microservice", Version = "v1"});
                 c.EnableAnnotations();
             });
             
@@ -117,7 +117,7 @@ namespace GrupoWebBackend
             // For this course purpose we allow Swagger in release mode.
             app.UseDeveloperExceptionPage();
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TimExp Backend v1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "User Microservice v1"));
 
             app.UseCors(builder => builder
                 .AllowAnyOrigin()
